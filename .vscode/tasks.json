@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run-server",
+      "type": "shell",
+      "command": "cargo +nightly run -- mkdb.db 8000",
+      "problemMatcher": []
+    },
+    {
+      "label": "run-client",
+      "type": "shell",
+      "command": "cargo +nightly run -p client -- 8000",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Server",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/mkdb.exe",
+      "args": ["mkdb.db", "8000"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "cargo build"
+    },
+    {
+      "name": "Debug Client",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/client.exe",
+      "args": ["8000"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "cargo build"
+    }
+  ]
+}
